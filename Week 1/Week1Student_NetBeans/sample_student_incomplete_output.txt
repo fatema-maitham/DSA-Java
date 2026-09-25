@@ -1,0 +1,9 @@
+===== WEEK 1 JAVA OOP + ADT + ARRAYLIST PRACTICE =====
+
+1) People in the system (polymorphism example):
+TODO: Add a Person object here.
+TODO: Add a Person object here.
+
+2) Courses:
+TODO: Create fixedList first.
+TODO: Create dynamicList first.
