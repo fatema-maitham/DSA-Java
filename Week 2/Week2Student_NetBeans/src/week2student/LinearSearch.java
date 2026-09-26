@@ -13,7 +13,14 @@ public class LinearSearch implements SearchAlgorithm {
         // 2. Increase comparisons once for every record checked.
         // 3. If the id matches targetId, return a SearchResult with that index.
         // 4. If not found, return index -1.
+        for (int i = 0; i < records.length; i++) {
+            comparisons++;
 
+            if (records[i].getId() == targetId) {
+                return new SearchResult("Linear search", targetId, i, comparisons);
+            }
+        }
+        
         return new SearchResult("Linear search", targetId, -1, comparisons);
     }
 }

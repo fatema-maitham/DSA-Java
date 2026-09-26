@@ -12,15 +12,21 @@ public class RecursiveBinarySearch implements SearchAlgorithm {
     private SearchResult searchRecursive(StudentRecord[] records, int targetId,
             int left, int right, int comparisons) {
 
-        // TODO 9:
-        // Base case: if left > right, target is not found.
-        // Recursive case:
-        // - calculate mid
-        // - increase comparisons
-        // - return found result if id matches
-        // - if target is greater than middle id, search right half
-        // - otherwise, search left half
+        if (left > right) {
+            return new SearchResult("Binary search recursive", targetId, -1, comparisons);
+        }
 
-        return new SearchResult("Binary search recursive", targetId, -1, comparisons);
+        int mid = left + (right - left) / 2;
+        comparisons++;
+
+        if (records[mid].getId() == targetId) {
+            return new SearchResult("Binary search recursive", targetId, mid, comparisons);
+        }
+
+        if (targetId > records[mid].getId()) {
+            return searchRecursive(records, targetId, mid + 1, right, comparisons);
+        } else {
+            return searchRecursive(records, targetId, left, mid - 1, comparisons);
+        }
     }
 }

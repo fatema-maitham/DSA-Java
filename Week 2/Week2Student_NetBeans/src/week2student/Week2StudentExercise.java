@@ -20,6 +20,30 @@ public class Week2StudentExercise {
         OperationCounter.runOperationCountingExamples();
         RecursionExamples.runRecursionExamples();
         SearchDemo.runSearchingExamples(records);
+
         PracticeTasks.printStudentPracticeTasks();
+
+        // A. Find highest mark
+        System.out.println("\nA. Highest mark: "
+                + PracticeTasks.findHighestMark(records));
+
+        // B. Count students above 80
+        System.out.println("B. Students scoring above 80: "
+                + PracticeTasks.countAbove80(records));
+
+        // C. Explain binary search requirement
+        System.out.println("C. " 
+                + PracticeTasks.explainBinarySearchRequirement());
+
+        // D. Create and print dataset sorted by mark
+        StudentRecord[] markSortedRecords =
+                PracticeTasks.createMarkSortedDataset(records);
+
+        System.out.println("D. Dataset sorted by mark:");
+        DatasetPrinter.printDataset(markSortedRecords);
+
+        // E. Print Big-O
+        System.out.println("E. Big-O:");
+        PracticeTasks.printBigO();
     }
 }
