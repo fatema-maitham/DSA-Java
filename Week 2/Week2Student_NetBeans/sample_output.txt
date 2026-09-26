@@ -1,0 +1,61 @@
+==============================
+WEEK 2 JAVA PRACTICE EXERCISE
+DSA, Analysis, Recursion, Searching
+==============================
+
+1) Dataset used in this exercise:
+   index 0: 1001 - Ali (72.5)
+   index 1: 1003 - Sara (89.0)
+   index 2: 1007 - Noor (91.5)
+   index 3: 1012 - Omar (66.0)
+   index 4: 1020 - Lina (78.5)
+   index 5: 1025 - Zaid (84.0)
+   index 6: 1030 - Huda (95.0)
+
+2) What is DSA?
+   Data Structure: TODO: explain what a data structure is
+   Algorithm: TODO: explain what an algorithm is
+   DSA: TODO: explain what DSA means
+
+3) Big-O examples:
+   One loop over n items: TODO
+   Two nested loops over n items: TODO
+   Binary search on sorted data: TODO
+   Direct array access arr[i]: TODO
+
+4) Operation counting examples:
+   countSingleLoopOperations(5) = 0
+   countSingleLoopOperations(10) = 0
+   countNestedLoopOperations(5) = 0
+   countNestedLoopOperations(10) = 0
+
+5) Recursion examples:
+   recursiveSum(5) = -1
+   factorial(5) = -1
+   countdown(4):
+      4
+      3
+      2
+      1
+      Done!
+
+6) Searching examples:
+   Is dataset sorted by id? true
+   Linear search | target=1001 | Not found | comparisons=0
+   Linear search | target=1012 | Not found | comparisons=0
+   Linear search | target=1030 | Not found | comparisons=0
+   Linear search | target=9999 | Not found | comparisons=0
+
+   Binary search iterative | target=1001 | Not found | comparisons=0
+   Binary search iterative | target=1012 | Not found | comparisons=0
+   Binary search iterative | target=1030 | Not found | comparisons=0
+   Binary search iterative | target=9999 | Not found | comparisons=0
+
+   Binary search recursive | target=1025 | Not found | comparisons=0
+
+7) Extra practice tasks for students:
+   A. Add a method to find the highest mark using linear scan.
+   B. Add a recursive method to count how many students scored above 80.
+   C. Explain why binary search cannot be used if the array is not sorted by id.
+   D. Create another dataset sorted by mark and search by mark.
+   E. Write the Big-O for every method you completed.
