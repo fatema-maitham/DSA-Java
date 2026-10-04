@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Week3Student_NetBeans" default="run" basedir=".">
+    <description>Builds, tests, and runs the Week3Student_NetBeans project.</description>
+    <property name="src.dir" value="src"/>
+    <property name="build.dir" value="build"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+    <property name="dist.dir" value="dist"/>
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+    <target name="compile">
+        <mkdir dir="${classes.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" includeantruntime="false" source="1.8" target="1.8"/>
+    </target>
+    <target name="run" depends="compile">
+        <java classname="week3sorting.MainApp" classpath="${classes.dir}" fork="true"/>
+    </target>
+    <target name="jar" depends="compile">
+        <mkdir dir="${dist.dir}"/>
+        <jar destfile="${dist.dir}/Week3Student_NetBeans.jar" basedir="${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="week3sorting.MainApp"/>
+            </manifest>
+        </jar>
+    </target>
+</project>
