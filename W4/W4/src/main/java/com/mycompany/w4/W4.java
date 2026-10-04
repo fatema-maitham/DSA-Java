@@ -1,5 +1,7 @@
 package com.mycompany.w4;
 
+import java.util.LinkedList;
+
 public class W4 {
 
     static class Node<E> { // one item in a linked list
@@ -58,6 +60,15 @@ public class W4 {
         printAll();
 
         System.out.println("\nSize: " + size);
+        
+        LinkedList<Integer> list = new LinkedList<>();
+
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.add(40);
+
+        System.out.println(list);
     }
 
     // INSERT FIRST
